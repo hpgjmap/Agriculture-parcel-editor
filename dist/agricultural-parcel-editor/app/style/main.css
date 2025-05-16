@@ -1,0 +1,764 @@
+/***************HTML Tags***************/
+html,
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--calcite-color-foreground-1);
+    display:flex;
+    overflow: hidden;
+    --calcite-color-foreground-4: var(--calcite-color-foreground-1);
+}
+calcite-loader {
+    align-self: center;
+    justify-self: center;
+}
+h2.esri-feature__title {
+    padding: 5px;
+}
+/***************HTML Elements with IDs***************/
+#template {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--calcite-color-foreground-1);
+    display: flex;
+}
+
+
+#content-behind {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#user-thumbnail {
+    cursor: pointer;
+}
+#mode-select-modal {
+    --calcite-modal-padding-internal: 0px;
+}
+
+/***************HTML Elements with class***************/
+.ape-header {
+    /*margin-inline: 1rem;*/
+    display: flex;
+    max-height: 56px;
+}
+.ape-header-title {
+    display: flex;
+    flex-grow: 1;
+}
+.map {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.widget-panel {
+    display: flex;
+    z-index: 1;
+    --calcite-shell-panel-height: 100%;
+}
+.end-panel {
+    display: flex;
+    z-index: 1;
+    --calcite-shell-panel-height: 100%;
+/*    --calcite-shell-panel-width: 30vw;
+    --calcite-shell-panel-min-width: 10vw;
+    --calcite-shell-panel-max-width: 50vw;    */
+}
+.align-horizontal {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    align-items: center;
+    padding-inline: 1rem;
+    border-bottom: 1px solid var(--calcite-color-border-3);
+}
+.header-lineBreak {
+    display: flex;
+    flex-grow: 0;
+    box-shadow: inset 1px 0 0 0 var(--calcite-color-border-3);
+    height: 100%;
+    width: 1px;
+    margin-right: 1rem;
+}
+.ground-container {
+    padding: 10px;
+    background: var(--calcite-color-foreground-2);
+}
+.ground-layer-item {
+    padding-bottom: 5px;
+}
+.ground-text {
+    padding: 5px;
+    font-weight: bold;
+}
+.about-text {
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.panel-height {
+    --calcite-panel-max-height:100%;
+}
+.margin-panel {
+    padding: 10px;
+}
+.user-info {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.modal-height {
+    --calcite-modal-height: 50%;
+}
+.padding-control {
+    padding: 0 10px;
+}
+.margin-top {
+    margin-top: 10px;
+}
+.esri-layer-list__status-indicator  {
+    margin-inline: 0px !important;
+}
+.esri-layer-list__item-title {
+    padding-right: 0px !important;
+    max-height: 37px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.disable-label-spacing {
+    --calcite-label-margin-bottom: 0px;
+}
+.prev-next-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.total-count {
+    display: flex;
+    flex-grow: 1;
+    margin-right:5px;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    text-overflow: clip;
+    overflow: hidden;
+}
+.input-number {
+    display: flex;
+    min-width: 50px;    
+}
+.slash-string {
+    display: flex;
+    margin-inline:5px;
+    align-items: center;
+    justify-content: center;
+}
+.feature-attributes-container {
+    padding: 10px;
+}
+.modal-no-header {
+    --calcite-modal-width: 300px;
+    --calcite-modal-padding-internal: 0px;
+}
+.action-group-2 {
+    width:100%;
+}
+.width-2 {
+    width:50%;
+}
+.modal-btn {
+    margin-block: 10px;
+    height: 30px;
+}
+.div-table-row {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    border-block: 1px solid rgb(130,159,214);
+}
+.table-row-color-1 {
+    background: rgb(233,235,245);
+}
+.table-row-color-2 {
+    background: rgb(207,213,234);
+}
+.div-table-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    border: 1px solid rgb(130,159,214);
+}
+.div-table-cell-1 {
+    display: flex;
+    justify-content: start;
+    width: 70%;
+    padding: 4px 5px;    
+    align-items: center;
+    border-inline: 1px solid rgb(130,159,214);
+    height: calc(100% - 8px);
+}
+.div-table-cell-2 {
+    display: flex;
+    justify-content: start;
+    width: 30%;
+    padding: 4px 5px;    
+    align-items: center;
+    border-inline: 1px solid rgb(130,159,214);
+    height: calc(100% - 8px);
+}
+.user-popup-block {
+    width: 250px;
+    margin: 0;
+}
+.disable-block-padding {
+    --calcite-block-padding: 0px;
+}
+.display-inline-flex {
+    display: inline-flex;
+}
+.keys {
+    border: 1px solid #cdcdcd;
+    background: #f6f6f6;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.header-4 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+.padding-bottom {
+    padding-bottom: 10px;
+}
+.padding-10px {
+    padding: 10px;
+}
+.table-panel {
+    display: flex;
+    width:50%;
+    font-size: 13px;
+}
+.aoi-map {
+    width: 100%;
+    height: 200px;
+}
+.mode-panel {
+    padding: 0 10px;
+}
+.accordion-padding {
+    --calcite-accordion-item-padding: 0.25rem 0 0.5rem;
+}
+.help-text {
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin-block: 5px;
+    font-weight: var(--calcite-font-weight-medium);
+    color: var(--calcite-color-text-2);
+}
+.report-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: var(--calcite-color-text-1);
+}
+.report-title {
+    display: flex;
+    margin-block: 5px;
+}
+.report-sub-heading {
+    display: flex;
+    margin-block: 5px;
+    font-weight: 400;
+}
+.report-sub-text {
+    display: flex;
+    margin-block: 2.5px;
+}
+.report-table-graphic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-block: 5px;
+    color: #151515;
+}
+.canvas-check-distribution {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.few-points-text {
+    display: flex;
+    padding-block: 5px;
+    font-style: italic;
+    text-align: justify;
+}
+.outliers-text {
+    display: flex;
+    padding-block: 5px;
+}
+.unit-text {
+    display: flex;
+    padding-block: 5px;
+}
+.user-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 5px;
+}
+.user-date {
+    display: flex;
+}
+.user-name {
+    display: flex;
+}
+.note-div {
+    display: flex;
+    flex-direction: row;
+    padding-block: 5px;
+}
+.note-title {
+    display: flex;
+}
+.note-text {
+    display: flex;
+    text-align: justify;
+    padding-inline: 2.5px;
+}
+.sup-text {
+    display: flex;
+    font-size: xx-small;
+    align-self: baseline; 
+}
+/* .canvas-points {
+    
+} */
+.remove-measure-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.point-uncertainty-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.popup-content {
+    text-align: justify;
+    max-width: 300px;
+    padding: 10px;
+}
+.feature-table-btn {
+    height: 32px;
+    --calcite-ui-text-1: var(--calcite-color-text-3);
+}
+.center-panel-container, .content-panel-container {
+    width: 100%;
+    height: 100%;
+}
+.padding-bottom-rem {
+    padding-bottom: 0.75rem;
+}
+
+.action-margin {
+    margin: 0px;
+}
+.pointer-cursor {
+    cursor: pointer;
+}
+.shell-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.layer-title {
+    max-height: 16px;
+    text-overflow: clip;
+    overflow: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
+.select-loader-div {
+    display: flex;
+    flex-direction: row;
+}
+.layer-update-loader {
+    margin-inline: 5px;
+}
+.image-list {
+    flex-grow: 1;
+
+}
+.esri-field-column__header-content {
+    color:var(--calcite-color-text-2);
+}
+.padding-block {
+    padding-block: 1rem;
+}
+.padding-inline {
+    padding-inline: 2rem;
+}
+.content-panel-container vaadin-grid-cell-content, .center-panel-container vaadin-grid-cell-content  {
+    color: var(--calcite-color-text-2);
+}
+.width-action-group, .accordion-list {
+    width: 100%;
+}
+.width-action {
+    width: 50%;
+}
+
+
+
+
+.padding-quote-content {
+    padding-bottom: 0.7rem;
+}
+
+.calcite-block-padding {
+    --calcite-block-padding: 0px;
+}
+.border-right {
+    border-right: 1px solid var(--calcite-color-border-3);
+    display: flex;    
+}
+.area-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.submit-btn {
+        margin: 0 auto;
+}
+.clear-all-btn {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+.link-content-btn {
+    padding-block: 5px;
+}
+.content-switch-container {
+    display: flex;
+    flex-direction: column;
+}
+.minimize-panel {
+    height: 48px;
+}
+
+.no-content-modal {
+    --calcite-modal-padding-internal: 0rem;
+}
+.padding-container {
+    padding: 0.5rem;
+}
+.block-border {
+    border: 1px solid var(--calcite-color-border-input);
+}
+.p-padding {
+    padding: 0 10px;
+    max-width: 200px;
+}
+.label-popover {
+    display: flex;
+}
+.label-icon {
+    cursor: pointer;
+    margin-inline: 5px;
+}
+
+.parcel-list-container {
+    max-height: 50%;
+    overflow-y: auto;
+}
+#parcels-container {
+    height: 100%;
+}
+.parcel-action-pad {
+    padding: 10px 0;
+}
+.btn-display-flex {
+    display: flex;
+    padding: 5px;
+}
+.editor-draw-help {
+    padding: 18px 15px;
+    display: flex;
+    position: relative;
+    min-height: 200px;
+    height: auto;
+    text-align: center;
+    width: auto;
+    min-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.form-template {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 250px;
+}
+.editor-panel {
+    height: auto;
+    width: auto;
+    min-width: 300px;
+    min-height: 200px;
+}
+.edit-form-footer {
+    display: flex;
+    width: 100%;
+}
+.editor-prompt-danger {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    border-top: solid 3px var(--calcite-color-status-danger);
+    background-color: var(--calcite-color-background);
+    animation: .25s ease-in-out esri-fade-in-up;    
+    max-height: 85%;
+    padding-block: 12px;
+    padding-inline: 15px;
+    flex-flow: column;
+}
+.editor-prompt-header {
+    color: var(--calcite-color-status-danger);
+    flex: none;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 12px;
+    display: flex;
+}
+.editor-prompt-header-title {
+    margin: 0 3px;
+}
+.editor-prompt-message {
+    word-break: break-word;
+    color: inherit;
+    flex: auto;
+    padding: 0 0 12px;
+    font-weight: 400;
+    overflow: hidden auto;
+}
+.editor-prompt-divider{
+    color: inherit;
+    border-color: var(--calcite-color-border-1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    flex: none;
+    margin: 0 0 12px;
+}
+.editor-prompt-actions {
+    flex-direction: row;
+    display: flex;
+}
+.editor-prompt-scrim {
+    inset: 40px 0 0 0;
+}
+.parcel-transparency-slider {
+    min-width:150px;
+    background: var(--calcite-color-background);
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    --calcite-label-margin-bottom: 0px;
+}
+
+body {
+    margin: 0;
+  }
+  
+  .display-block {
+    display: block;
+  }
+  .display-none {
+    display: none;
+  }
+  .flex {
+    display: flex;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .gap-10 {
+    gap: 10px;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  .w-half {
+    width: 50%;
+  }
+  
+  .opacity-40 {
+    opacity: 0.4;
+  }
+  .opacity-100 {
+    opacity: 1;
+  }
+  
+  .gap-5 {
+    gap: 5px;
+  }
+  .text-16 {
+    font-size: 16px;
+  }
+  .text-18 {
+    font-size: 18px;
+  }
+  .text-14 {
+    font-size: 14px;
+  }
+  .color-83 {
+    color: rgb(83, 83, 83);
+  }
+  .weight-500 {
+    font-weight: 500;
+  }
+  .weight-bold {
+    font-weight: bold;
+  }
+  .weight-normal {
+    font-weight: normal;
+  }
+  .mt-15 {
+    margin-top: 15px;
+  }
+  .save-portal {
+    --calcite-button-background-color: #4caf50;
+  }
+  
+  .shell {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+  }
+  .capture-image {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .close-capture {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 100%;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .capture-panel {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blue(4px);
+  }
+  
+  .capture-btn {
+    padding: 25px;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    outline: 3px solid white;
+    border: 4px solid transparent;
+    box-shadow: 0 0 2px black;
+    outline-offset: 3px;
+    transition: transform 0.1s ease-in-out;
+  }
+  .screen-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .confirm-delete {
+    position: sticky;
+    bottom: 12px;
+  }
+  
+  .alert {
+    background-color: white;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+  .set-direction-active {
+    --calcite-button-background-color: rgb(87, 90, 88);
+    --calcite-button-text-color: white;
+    --calcite-button-border-color: rgb(97, 90, 88);
+  }
+  .set-direction-not-active {
+    --calcite-button-text-color: rgb(87,90,88);  
+    --calcite-button-background-color: white;
+    --calcite-button-border-color: rgb(97, 90, 88);
+  }
+  

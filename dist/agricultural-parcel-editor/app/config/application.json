@@ -1,0 +1,188 @@
+{
+  "appID": "SPaJdfObTm80dbyX",
+  "portalURL": "https://www.arcgis.com",
+  "theme": "light",
+  "appTitle": "nls.agriculturalParcelEditor",
+  "webmap": "",
+  "layerInfo": [
+    {
+      "code": "RP",
+      "title": "nls.referenceParcels",
+      "required": true,
+      "type": "reference-parcels"
+    },
+    {
+      "code": "FP",
+      "title": "nls.farmerParcels",
+      "required": true,
+      "type": "farmer-parcels",
+      "mainCropField": "maincrop",
+      "catchCropField": "catchcrop",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "label": "nls.mainCrop",
+            "fieldName": "maincrop",
+            "type": "field"
+          },
+          {
+            "label": "nls.catchCrop",
+            "fieldName": "catchcrop",
+            "type": "field"
+          },
+          {
+            "label": "nls.changeDate",
+            "fieldName": "changeDate",
+            "input": {
+              "type": "datetime-picker",
+              "includeTime": false
+            },
+            "type": "field"
+          },
+          {
+            "label": "nls.declaredArea",
+            "fieldName": "declaredarea",
+            "type": "field"
+          }
+        ]
+      }
+    },
+    {
+      "code": "CC",
+      "title": "nls.catchCrop",
+      "required": true,
+      "type": "catch-crop"
+    },
+    {
+      "code": "OP",
+      "title": "nls.otherParcels",
+      "required": true,
+      "type": "other-parcels"
+    },
+    {
+      "code": "AZ",
+      "title": "nls.agriculturalZones",
+      "required": true,
+      "type": "agricultural-zones"
+    },
+    {
+      "code": "AR",
+      "title": "nls.agencyRequests",
+      "required": false,
+      "type": "agency-requests",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "type": "field",
+            "fieldName": "description",
+            "label": "",
+            "hint": "nls.writeComment",
+            "input": {
+              "type": "text-area"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "code": "FC",
+      "title": "nls.farmerComments",
+      "required": false,
+      "type": "farmer-comments",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "label": "",
+            "fieldName": "description",
+            "hint": "nls.writeComment",
+            "input": {
+              "type": "text-area"
+            },
+            "type": "field"
+          }
+        ]
+      }
+    },
+    {
+      "code": "FN",
+      "title": "nls.farmerNotes",
+      "required": false,
+      "type": "farmer-notes",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "label": "",
+            "fieldName": "description",
+            "hint": "nls.writeNote",
+            "input": {
+              "type": "text-area"
+            },
+            "type": "field"
+          }
+        ]
+      }
+    },
+    {
+      "code": "AP",
+      "title": "nls.requiredPhotos",
+      "required": false,
+      "type": "required-photos",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "type": "text",
+            "textFormat": "markdown",
+            "text": "nls.replyWindowMessage"
+          },
+          {
+            "type": "field",
+            "fieldName": "description",
+            "label": "",
+            "hint": "nls.writeComment",
+            "input": {
+              "type": "text-area"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "code": "TP",
+      "title": "nls.farmerPhotos",
+      "required": false,
+      "type": "farmer-photos",
+      "formTemplate": {
+        "title": "",
+        "description": "",
+        "elements": [
+          {
+            "type": "field",
+            "fieldName": "description",
+            "label": "",
+            "hint": "nls.writeComment",
+            "input": {
+              "type": "text-area"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "code": "BI",
+      "title": "nls.baseImage",
+      "required": false,
+      "type": "base-image"
+    }
+  ],
+  "catchCropRenderer": {}
+}

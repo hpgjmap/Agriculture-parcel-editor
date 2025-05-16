@@ -1,0 +1,17 @@
+{
+  "name": "typescriptapps",
+  "version": "1.0.0",
+  "description": "apps developed with typescripts and react",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@arcgis/core": "^4.29.0",
+    "arcgis-js-api": "^4.29.0"
+  },
+  "devDependencies": {
+    "@types/arcgis-js-api": "^4.28.0",
+    "typescript": "^4.9.5"
+  }
+}
